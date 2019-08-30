@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "python",
+    "python.autoComplete.addBrackets": true,
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/env/Lib/site-packages"
+    ]
+}   
