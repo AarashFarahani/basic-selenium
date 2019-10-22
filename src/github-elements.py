@@ -4,17 +4,17 @@ driver = webdriver.Firefox()
 
 driver.get("https://github.com/AarashFarahani/basic-selenium")
 
-def printText(filesName):
-    for a in filesName:
+def printText(contents):
+    for a in contents:
         if(a.text):
             print(a.text)
 
-filesName = driver.find_elements_by_css_selector("a.js-navigation-open")
-printText(filesName)
+contents = driver.find_elements_by_css_selector("a.js-navigation-open")
+printText(contents)
 
 print("************************************")
 
-filesName = driver.find_elements_by_xpath("//a[contains(@class, 'js-navigation-open')]")
-printText(filesName)
+contents = driver.find_elements_by_xpath("//a[contains(@class, 'js-navigation-open')]")
+printText(contents)
 
 driver.quit()
